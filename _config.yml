@@ -1,0 +1,6 @@
+title: Len Koepsell - Playwright
+email: len@lenhardtmusic.com
+phone_number: (213) 282-7480
+collections:
+- plays
+exclude: [CNAME, Gemfile*]

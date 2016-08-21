@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<h1>{{ site.title }}</h1>
+<h2>Plays</h2>
+<ul>
+    {% for play in site.plays %}
+    <li>{{ play.title }}</li>
+    <ul>
+        <li>{{ play.description }}</li>
+        <li>{{ play.plot_summary }}</li>
+    </ul>
+    {% endfor %}
+</ul>
+<h2>Contact</h2>
+<p>
+    <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+    <div>{{ site.phone_number }}</div>
+</p>
