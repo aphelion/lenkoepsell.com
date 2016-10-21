@@ -2,14 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>{{ site.title }}</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
           integrity="sha256-t2/7smZfgrST4FS1DT0bs/KotCM74XlcqZN5Vu7xlrw="
           crossorigin="anonymous">
     <link rel="stylesheet" href="/css/styles.css" type="text/css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+    <script src="/javascript/script.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Cutive+Mono|Josefin+Sans|Lora|Oswald|Playfair+Display+SC|Quicksand|Vidaloka" rel="stylesheet">
 </head>
 <body class="{{ page.body_class }}">
+<div class="mobile-menu">
+    <button data-mobile-menu-button><img class="menu-button" src="/images/menu.svg"></button>
+    <div data-mobile-menu>
+        <ul class="menu">
+            <li><a href="/">About</a></li>
+            <li>Plays</li>
+            <ul>
+                {% for play in site.plays %}
+                <li><a href="{{ play.url }}">{{ play.title }}</a></li>
+                {% endfor %}
+            </ul>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </div>
+</div>
 <ul class="menu">
     <li><a href="/">About</a></li>
     <li>Plays</li>

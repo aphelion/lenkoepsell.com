@@ -2,26 +2,44 @@
 ---
 
 $global-padding: 3.5rem;
+$mobile-breakpoint: 900px;
+$media-mobile: "only screen and (max-width : #{$mobile-breakpoint - 1})";
+$media-desktop: "only screen and (min-width : #{$mobile-breakpoint})";
 
 html {
   height: 100vh;
 }
 
 body {
-  min-height: calc(100vh - #{2 * $global-padding});
+  @media #{$media-desktop} {
+    min-height: calc(100vh - #{2 * $global-padding});
+  }
+  @media #{$media-mobile} {
+    min-height: calc(100vh - 5rem);
+    font-size: 1.25rem;
+  }
 }
 
 body {
-  padding: $global-padding;
-  display: flex;
-  justify-content: space-between;
+  @media #{$media-desktop} {
+    padding: $global-padding;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media #{$media-mobile} {
+    padding: $global-padding / 2;
+  }
 
   &.about {
+    .mobile-menu {
+      background-color: #f0f1ec;
+    }
+
     background-color: #f0f1ec;
 
     .title {
       font-family: 'Abril Fatface', cursive;
-      font-size: 3rem;
     }
     .profession {
       font-family: 'Abril Fatface', cursive;
@@ -30,12 +48,19 @@ body {
   }
 
   &.murder {
+    .mobile-menu {
+      background-color: #3f424a;
+    }
+
     background-color: #3f424a;
+
     color: white;
     font-family: 'Quicksand', sans-serif;
     .content {
-      align-self: center;
-      text-align: right;
+      @media #{$media-desktop} {
+        align-self: center;
+        text-align: right;
+      }
     }
     .title {
       font-family: 'Vidaloka', serif;
@@ -48,34 +73,56 @@ body {
   }
 
   &.drummer {
+    .mobile-menu {
+      background-color: #e8efe8;
+    }
+
     background-color: #e8efe8;
+
     color: #4a4a4a;
     font-family: 'Josefin Sans', sans-serif;
     .title {
       font-family: 'Lora', serif;
-      font-size: 5rem;
       color: #7885a0;
     }
   }
 
   &.flyswatter {
+    .mobile-menu {
+      background-color: #dcdcdc;
+    }
+
     background-color: #dcdcdc;
+
     color: #4a4a4a;
     font-family: 'Cutive Mono', monospace;
     .title {
       font-family: 'Oswald', sans-serif;
-      font-size: 5rem;
       color: #f66044;
     }
   }
 
   &.contact {
+    .mobile-menu {
+      background-color: white;
+    }
+
+    background-color: white;
     font-family: 'Playfair Display SC', serif;
     .content {
-      align-self: center;
-      flex-grow: 1;
-      align-items: center;
+      @media #{$media-desktop} {
+        align-self: center;
+        flex-grow: 1;
+        align-items: center;
+      }
       font-size: 1.25rem;
+
+      @media #{$media-mobile} {
+        > * {
+          display: block;
+          text-align: center;
+        }
+      }
 
       > * {
         margin-bottom: 1rem;
@@ -88,7 +135,9 @@ body {
 }
 
 .title {
-  text-align: right;
+  @media #{$media-desktop} {
+    text-align: right;
+  }
 }
 
 .menu {
@@ -97,6 +146,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Courier New", Courier, monospace;
+
+  @media #{$media-mobile} {
+    display: none;
+  }
 
   ul {
     @extend .menu;
@@ -113,16 +166,24 @@ a {
 }
 
 .text {
-  width: 30rem;
+  @media #{$media-desktop} {
+    width: 30rem;
+  }
 }
 
 .content {
-  align-self: flex-end;
-  margin-left: $global-padding;
+  @media #{$media-desktop} {
+    align-self: flex-end;
+    margin-left: $global-padding;
 
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  @media #{$media-mobile} {
+    padding-top: 5rem;
+  }
 
   > * {
     margin-bottom: $global-padding;
@@ -130,4 +191,49 @@ a {
       margin-bottom: 0;
     }
   }
+}
+
+.mobile-menu {
+  @media #{$media-desktop} {
+    display: none;
+  }
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  border-bottom: 2px black solid;
+
+  button {
+    border: 0;
+    padding: 0;
+    background: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .menu-button {
+    display: block;
+    height: 3rem;
+  }
+
+  [data-mobile-menu] {
+    display: none;
+  }
+}
+
+.title {
+  @media #{$media-desktop} {
+    font-size: 5rem;
+  }
+  @media #{$media-mobile} {
+    font-size: 3rem;
+  }
+}
+
+.ruler {
+  display: none;
 }
