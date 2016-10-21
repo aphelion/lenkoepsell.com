@@ -6,6 +6,16 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
 <body>
+<ul>
+    <li><a href="/">About</a></li>
+    <li>Plays</li>
+    <ul>
+        {% for play in site.plays %}
+        <li><a href="{{ play.url }}">{{ play.title }}</a></li>
+        {% endfor %}
+    </ul>
+    <li><a href="/contact">Contact</a></li>
+</ul>
 {{ content }}
 </body>
 </html>

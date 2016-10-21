@@ -1,4 +1,5 @@
 ---
+layout: play
 title: The Drummer's Dilemma
 description: >
   A musician-driven comedic-drama in Two Acts. An eight member cast:

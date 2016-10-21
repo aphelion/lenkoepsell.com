@@ -1,4 +1,5 @@
 ---
+layout: play
 title: Murder's Muse
 description: A musician-driven Murder Mystery in Three Acts centered around a string quartet in 1980's Minneapolis.
 plot_summary: >
