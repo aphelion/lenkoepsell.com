@@ -1,6 +1,7 @@
 ---
-layout: play
+layout: play_alt
 title: The Drummer's Dilemma
+body_class: drummer
 description: >
   A musician-driven comedic-drama in Two Acts. An eight member cast:
   4 females, 4 males. Most of the actors either sing or play an instrument (2 guitarists, a bass player, and a drummer).
