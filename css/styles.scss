@@ -235,5 +235,7 @@ a {
 }
 
 .ruler {
-  display: none;
+  @media #{$media-mobile} {
+    display: none;
+  }
 }
