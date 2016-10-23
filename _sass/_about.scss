@@ -30,11 +30,11 @@ body.about {
     display: block;
 
     @media #{$media-desktop} {
-      height: calc(100vh - #{2 * $global-padding})
+      height: calc(100vh - #{2 * $global-padding});
     }
 
     @media #{$media-mobile} {
-      max-width: calc(100vw - #{$global-padding});
+      width: calc(100vw - #{$global-padding});
       align-self: center;
     }
   }
