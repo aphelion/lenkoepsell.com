@@ -1,0 +1,26 @@
+@import 'configuration';
+
+body.contact {
+  font-family: 'Playfair Display SC', serif;
+  .content {
+    @media #{$media-desktop} {
+      align-self: center;
+      flex-grow: 1;
+      align-items: flex-start;
+    }
+    font-size: 1.25rem;
+
+    @media #{$media-mobile} {
+      > * {
+        display: block;
+      }
+    }
+
+    > * {
+      margin-bottom: 1rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
