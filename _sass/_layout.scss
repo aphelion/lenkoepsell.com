@@ -1,0 +1,43 @@
+@import 'configuration';
+
+html {
+  height: 100vh;
+}
+
+body {
+  @media #{$media-desktop} {
+    min-height: calc(100vh - #{2 * $global-padding});
+    padding: $global-padding;
+    display: flex;
+    justify-content: space-between;
+  }
+  @media #{$media-mobile} {
+    min-height: calc(100vh - 5rem);
+    padding: $global-padding / 2;
+  }
+
+  font-family: 'Cutive Mono', monospace;
+  background-color: white;
+}
+
+.content {
+  @media #{$media-desktop} {
+    align-self: flex-end;
+    margin-left: $global-padding;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  @media #{$media-mobile} {
+    padding-top: 5rem;
+  }
+
+  > * {
+    margin-bottom: $global-padding;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+@import 'configuration';
+
+body {
+  &.about {
+    .content {
+      @media #{$media-desktop} {
+        align-self: flex-start;
+      }
+    }
+  }
+
+  &.murder {
+    .title {
+      width: 30rem;
+    }
+  }
+
+  &.drummer {
+  }
+
+  &.flyswatter {
+  }
+
+  &.contact {
+    font-family: 'Playfair Display SC', serif;
+    .content {
+      @media #{$media-desktop} {
+        align-self: center;
+        flex-grow: 1;
+        align-items: flex-start;
+      }
+      font-size: 1.25rem;
+
+      @media #{$media-mobile} {
+        > * {
+          display: block;
+        }
+      }
+
+      > * {
+        margin-bottom: 1rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.text {
+  @media #{$media-desktop} {
+    width: 30rem;
+  }
+}
+
+.illustration {
+  text-align: center;
+  img {
+    height: 30rem;
+  }
+}
+
+.who {
+  font-family: 'Abril Fatface', cursive;
+  text-align: right;
+
+  > * {
+    margin-bottom: $global-padding / 2;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .name {
+    font-size: 4rem;
+  }
+  .profession {
+    font-size: 2rem;
+  }
+}

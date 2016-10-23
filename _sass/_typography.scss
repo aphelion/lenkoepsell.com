@@ -1,0 +1,17 @@
+@import 'configuration';
+
+.title {
+  @media #{$media-desktop} {
+    font-size: 5rem;
+  }
+  @media #{$media-mobile} {
+    font-size: 3rem;
+  }
+
+  font-family: 'Oswald', sans-serif;
+  color: #f66044;
+}
+
+a {
+  color: inherit;
+}
