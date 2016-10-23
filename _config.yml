@@ -7,9 +7,13 @@ collections:
     output: true
     permalink: /plays/:path
 exclude: [CNAME, Gemfile*]
-#defaults:
-#  - scope:
-#      path: ""
-#      type: plays
-#    values:
-#      layout: play
+defaults:
+  - scope:
+      path: ''
+      type: plays
+    values:
+      layout: play
+  - scope:
+      path: ''
+    values:
+      layout: default

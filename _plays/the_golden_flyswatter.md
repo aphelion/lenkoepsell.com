@@ -1,5 +1,4 @@
 ---
-layout: play
 title: The Golden Flyswatter
 body_class: flyswatter
 description: >
