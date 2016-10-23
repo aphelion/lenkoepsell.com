@@ -34,18 +34,20 @@
         </ul>
     </div>
 </div>
-<ul class="menu">
-    <li><a href="/">About</a></li>
-    <li>
-        <button class="link" data-desktop-menu-button>Plays</button>
-    </li>
-    <ul data-desktop-menu>
-        {% for play in site.plays %}
-        <li><a href="{{ play.url }}">{{ play.title }}</a></li>
-        {% endfor %}
+<div>
+    <ul class="menu">
+        <li><a href="/">About</a></li>
+        <li>
+            <button class="link" data-desktop-menu-button>Plays</button>
+        </li>
+        <ul data-desktop-menu>
+            {% for play in site.plays %}
+            <li><a href="{{ play.url }}">{{ play.title }}</a></li>
+            {% endfor %}
+        </ul>
+        <li><a href="/contact">Contact</a></li>
     </ul>
-    <li><a href="/contact">Contact</a></li>
-</ul>
+</div>
 <div class="content">
     {{ content }}
 </div>
