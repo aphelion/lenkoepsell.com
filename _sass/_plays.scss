@@ -1,10 +1,16 @@
+@import 'configuration';
+
 body {
-  &.murder {
+  &.play {
   }
 
-  &.drummer {
-  }
-
-  &.flyswatter {
+  &.play-alt {
+    .content {
+      .title {
+        @media #{$media-mobile} {
+          order: -1;
+        }
+      }
+    }
   }
 }

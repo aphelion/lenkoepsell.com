@@ -38,11 +38,11 @@ body {
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+
   @media #{$media-desktop} {
     align-self: flex-end;
-
-    display: flex;
-    flex-direction: column;
     align-items: flex-end;
   }
 
