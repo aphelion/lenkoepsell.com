@@ -1,14 +1,8 @@
 body.about {
   .content {
     @media #{$media-desktop} {
-      align-self: flex-start;
-    }
-
-    .illustration {
-      text-align: center;
-      img {
-        height: 30rem;
-      }
+      align-self: flex-end;
+      flex-grow: 1;
     }
 
     .who {
@@ -29,6 +23,19 @@ body.about {
       .profession {
         font-size: 2rem;
       }
+    }
+  }
+
+  .illustration {
+    display: block;
+
+    @media #{$media-desktop} {
+      height: calc(100vh - #{2 * $global-padding})
+    }
+
+    @media #{$media-mobile} {
+      max-width: calc(100vw - #{$global-padding});
+      align-self: center;
     }
   }
 }

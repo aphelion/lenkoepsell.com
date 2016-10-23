@@ -15,7 +15,8 @@
             integrity="sha256-KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM="
             crossorigin="anonymous"></script>
     <script src="/javascript/script.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Cutive+Mono|Oswald|Playfair+Display+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Cutive+Mono|Oswald|Playfair+Display+SC"
+          rel="stylesheet">
 </head>
 <body class="{{ page.body_class }}">
 <div class="mobile-menu">
@@ -35,7 +36,9 @@
 </div>
 <ul class="menu">
     <li><a href="/">About</a></li>
-    <li><button class="link" data-desktop-menu-button>Plays</button></li>
+    <li>
+        <button class="link" data-desktop-menu-button>Plays</button>
+    </li>
     <ul data-desktop-menu>
         {% for play in site.plays %}
         <li><a href="{{ play.url }}">{{ play.title }}</a></li>
@@ -46,5 +49,6 @@
 <div class="content">
     {{ content }}
 </div>
+<img class="illustration" src="/images/illustration.jpg" alt="Len Koepsell - Playwright">
 </body>
 </html>
