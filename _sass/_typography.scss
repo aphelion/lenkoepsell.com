@@ -22,3 +22,12 @@
 a {
   color: inherit;
 }
+
+button.link {
+  font-family: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  text-decoration: underline;
+  cursor: pointer;
+}
