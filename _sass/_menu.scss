@@ -7,6 +7,13 @@
   padding: 0;
   font-family: "Courier New", Courier, monospace;
 
+  ul, li {
+    margin-bottom: $global-padding / 3;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   @media #{$media-mobile} {
     display: none;
   }
@@ -14,10 +21,6 @@
   ul {
     @extend .menu;
     padding-left: $global-padding;
-  }
-
-  li {
-    line-height: 2.5;
   }
 }
 
