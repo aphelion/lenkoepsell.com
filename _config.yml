@@ -5,7 +5,7 @@ phone_number: (213) 282-7480
 collections:
   plays:
     output: true
-    permalink: /plays/:path/
+    permalink: /plays/:path
 exclude: [CNAME, Gemfile*]
 #defaults:
 #  - scope:
