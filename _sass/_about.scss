@@ -23,6 +23,17 @@ body.about {
       .profession {
         font-size: 2rem;
       }
+
+      svg.ruler {
+        @media #{$media-desktop} {
+          max-width: 20rem;
+        }
+
+        @media #{$media-mobile} {
+          align-self: center;
+          height: auto;
+        }
+      }
     }
   }
 
