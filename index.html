@@ -2,10 +2,14 @@
 body_class: about
 ---
 <div class="who">
-    <div class="name">{{ site.title }}</div>
+    <div class="name">
+        <div class="first-name"><span>{{ site.first_name }}</span></div>
+        <div class="last-name"><span>{{ site.last_name }}</span></div>
+    </div>
     <div class="profession">{{ site.profession }}</div>
     <svg class="ruler" viewBox="0 0 100 6" xmlns="http://www.w3.org/2000/svg">
         <line x1="0" y1="3" x2="91" y2="3" stroke-width="2.5" stroke="black"/>
         <circle cx="97" cy="3" r="3"/>
     </svg>
 </div>
+<img class="illustration" src="/images/illustration.jpg" alt="Len Koepsell - Playwright">

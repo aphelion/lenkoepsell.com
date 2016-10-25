@@ -1,13 +1,36 @@
 body.about {
+  justify-content: flex-start;
+
   .content {
+
     @media #{$media-desktop} {
-      align-self: flex-end;
+      height: calc(100vh - #{2 * $global-padding});
+      max-height: 30rem;
+
+      align-self: center;
       flex-grow: 1;
+
+      align-items: stretch;
+      justify-content: center;
+
+      flex-direction: row;
+
+      > * {
+        margin-bottom: 0;
+      }
     }
 
     .who {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
       font-family: 'Abril Fatface', cursive;
       text-align: right;
+
+      @media #{$media-desktop} {
+        width: 20rem;
+      }
 
       > * {
         margin-bottom: $global-padding / 2;
@@ -17,7 +40,12 @@ body.about {
       }
 
       .name {
-        font-size: 4rem;
+        .first-name {
+          font-size: 6rem;
+        }
+        .last-name {
+          font-size: 4rem;
+        }
       }
 
       .profession {
@@ -35,18 +63,16 @@ body.about {
         }
       }
     }
-  }
 
-  .illustration {
-    display: block;
-
-    @media #{$media-desktop} {
-      height: calc(100vh - #{2 * $global-padding});
-    }
-
-    @media #{$media-mobile} {
-      width: calc(100vw - #{$global-padding});
-      align-self: center;
+    .illustration {
+      @media #{$media-mobile} {
+        width: 100%;
+      }
+      @media #{$media-desktop} {
+        order: -1;
+        margin-right: $global-padding;
+        height: 100%;
+      }
     }
   }
 }
