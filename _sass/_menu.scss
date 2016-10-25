@@ -60,6 +60,10 @@ $mobile-menu-height: 2rem + 2 * $mobile-menu-padding;
     ul {
       margin-top: $mobile-menu-padding;
     }
+
+    [data-mobile-menu], [data-mobile-menu-plays] {
+      display: none;
+    }
   }
 
   background-color: rgba($background-color, 0.6);
@@ -69,7 +73,7 @@ $mobile-menu-height: 2rem + 2 * $mobile-menu-padding;
   }
 }
 
-[data-desktop-menu], [data-mobile-menu] {
+[data-desktop-menu], [data-desktop-menu-plays] {
   display: none;
 }
 

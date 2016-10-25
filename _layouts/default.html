@@ -36,8 +36,8 @@
     <div class="menu">
         <ul data-mobile-menu>
             <li><a href="/">About</a></li>
-            <li>Plays</li>
-            <ul>
+            <li><button class="link" data-mobile-menu-plays-button>Plays</button></li>
+            <ul data-mobile-menu-plays>
                 {% for play in site.plays %}
                 <li><a href="{{ play.url }}">{{ play.title }}</a></li>
                 {% endfor %}
@@ -49,10 +49,8 @@
 <div class="menu">
     <ul>
         <li><a href="/">About</a></li>
-        <li>
-            <button class="link" data-desktop-menu-button>Plays</button>
-        </li>
-        <ul data-desktop-menu>
+        <li><button class="link" data-desktop-menu-plays-button>Plays</button></li>
+        <ul data-desktop-menu-plays>
             {% for play in site.plays %}
             <li><a href="{{ play.url }}">{{ play.title }}</a></li>
             {% endfor %}

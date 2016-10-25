@@ -4,7 +4,11 @@ $(document).ready(function () {
         $('.mobile-menu').toggleClass('open', 400);
     });
 
-    $('[data-desktop-menu-button]').click(function () {
-        $('[data-desktop-menu]').slideToggle();
+    $('[data-mobile-menu-plays-button]').click(function () {
+        $('[data-mobile-menu-plays]').slideToggle();
+    });
+
+    $('[data-desktop-menu-plays-button]').click(function () {
+        $('[data-desktop-menu-plays]').slideToggle();
     });
 });
