@@ -65,7 +65,7 @@ $mobile-menu-height: 2rem + 2 * $mobile-menu-padding;
   background-color: rgba($background-color, 0.6);
 
   &.open {
-    background-color: $background-color;
+    background-color: $title-color;
   }
 }
 
