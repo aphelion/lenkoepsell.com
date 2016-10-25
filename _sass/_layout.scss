@@ -34,7 +34,8 @@ body {
   }
 
   font-family: 'Cutive Mono', monospace;
-  background-color: white;
+  background-color: $background-color;
+  color: $font-color;
 }
 
 .content {

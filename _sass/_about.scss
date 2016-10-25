@@ -53,6 +53,7 @@ body.about {
       }
 
       svg.ruler {
+        fill: $font-color;
         @media #{$media-desktop} {
           max-width: 20rem;
         }

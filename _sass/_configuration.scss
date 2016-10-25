@@ -1,4 +1,9 @@
+@import './colors';
+
 $global-padding: 3.5rem;
 $mobile-breakpoint: 1200px;
 $media-mobile: "(orientation : portrait) and (max-width : #{$mobile-breakpoint - 1})";
 $media-desktop: "(orientation : landscape), (min-width : #{$mobile-breakpoint})";
+
+$font-color: #fafafa;
+$background-color: #3f424a;
