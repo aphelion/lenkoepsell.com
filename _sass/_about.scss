@@ -29,7 +29,7 @@ body.about {
       text-align: right;
 
       @media #{$media-desktop} {
-        width: 20rem;
+        max-width: 20rem;
       }
 
       > * {
