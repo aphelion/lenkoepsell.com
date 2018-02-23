@@ -2,7 +2,7 @@
 title: Public Storage
 body_class: play
 description: >
-  A contemporary dark comedy in two acts. One setting. A cast of seven actors: two female, four male. Running time 2
+  A contemporary dark comedy in two acts. One setting. A cast of seven actors: three female, four male. Running time two
   hours with a fifteen minute intermission.
 plot_summary: >
   Imagine three adjacent self-storage units in an old factory building in present-day Los Angeles. Cast an adorable
