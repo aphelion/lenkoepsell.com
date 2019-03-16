@@ -1,6 +1,7 @@
 ---
 title: Don't Forget To Water Mama
 body_class: play
+image: dont-forget-to-water-mama.jpg
 description: >
   A comedy in two acts. One setting. A cast of fifteen actors: eight female, seven male. Running time two hours with a
   fifteen minute intermission. Light-hearted family entertainment for regional community theaters.

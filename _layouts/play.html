@@ -1,6 +1,13 @@
 ---
 layout: default
 ---
-<div class="title">{{page.title}}</div>
-<div class="text">{{page.description}}</div>
-<div class="text">{{page.plot_summary}}</div>
+{% if page.image %}
+<div class="poster-container">
+    <img src="/images/{{page.image}}" class="poster" alt="">
+</div>
+{% endif %}
+<div class="info">
+    <div class="title">{{page.title}}</div>
+    <div class="text">{{page.description}}</div>
+    <div class="text">{{page.plot_summary}}</div>
+</div>

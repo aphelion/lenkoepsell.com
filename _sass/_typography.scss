@@ -1,9 +1,9 @@
 @import 'configuration';
 
 .title {
+  text-align: right;
   @media #{$media-desktop} {
     font-size: 5rem;
-    min-width: 30rem;
   }
   @media #{$media-mobile} {
     font-size: 3rem;
@@ -15,7 +15,7 @@
 
 .text {
   @media #{$media-desktop} {
-    width: 30rem;
+    max-width: 30rem;
   }
 }
 

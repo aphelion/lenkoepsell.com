@@ -1,3 +1,5 @@
+@import 'configuration';
+
 body.about {
   justify-content: flex-start;
 
@@ -14,10 +16,6 @@ body.about {
       justify-content: center;
 
       flex-direction: row;
-
-      > * {
-        margin-bottom: 0;
-      }
     }
 
     .who {
@@ -30,6 +28,10 @@ body.about {
 
       @media #{$media-desktop} {
         max-width: 20rem;
+      }
+
+      @media #{$media-mobile} {
+        margin-bottom: $global-padding / 2;
       }
 
       > * {
