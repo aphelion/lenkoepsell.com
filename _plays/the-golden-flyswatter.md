@@ -1,6 +1,7 @@
 ---
 title: The Golden Flyswatter
-body_class: play
+body_class: item
+layout: item
 description: >
   A comedic-drama in two acts. A cast of six actors: two female, four male. Running time: two hours with fifteen minute
   intermission.

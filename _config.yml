@@ -5,6 +5,9 @@ profession: Author
 email: info@lenkoepsell.com
 phone_number: (213) 282-7480
 collections:
+  stories:
+    output: true
+    permalink: /stories/:path
   plays:
     output: true
     permalink: /plays/:path

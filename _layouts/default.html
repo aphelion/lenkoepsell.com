@@ -42,6 +42,12 @@
                 <li><a href="{{ play.url }}">{{ play.title }}</a></li>
                 {% endfor %}
             </ul>
+            <li><button class="link" data-mobile-menu-plays-button>Stories</button></li>
+            <ul data-mobile-menu-stories>
+                {% for story in site.stories %}
+                <li><a href="{{ story.url }}">{{ story.title }}</a></li>
+                {% endfor %}
+            </ul>
             <li><a href="/contact">Contact</a></li>
         </ul>
     </div>
@@ -53,6 +59,12 @@
         <ul data-desktop-menu-plays>
             {% for play in site.plays %}
             <li><a href="{{ play.url }}">{{ play.title }}</a></li>
+            {% endfor %}
+        </ul>
+        <li><button class="link" data-desktop-menu-stories-button>Stories</button></li>
+        <ul data-desktop-menu-stories>
+            {% for story in site.stories %}
+            <li><a href="{{ story.url }}">{{ story.title }}</a></li>
             {% endfor %}
         </ul>
         <li><a href="/contact">Contact</a></li>

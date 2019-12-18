@@ -1,6 +1,7 @@
 ---
 title: Murder's Muse
-body_class: play
+body_class: item
+layout: item
 description: >
   A musician-driven murder mystery in three acts centered around a string quartet in 1980's Minneapolis.
   A cast of seven actors: three female, four male, with three male extras.
