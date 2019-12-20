@@ -2,8 +2,6 @@
 title: My Cousin Who Drowned
 body_class: item
 layout: item
-description: >
-  Description goes here.
 plot_summary: >
   When Laurie, a party girl known for skinny-dipping at twilight, goes missing,
   only her cousin, Carly, learns the real truth.

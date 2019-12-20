@@ -2,8 +2,6 @@
 title: Graveyard Ultimatums
 body_class: item
 layout: item
-description: >
-  Description goes here.
 plot_summary: >
   Officer Frank Goretti, a confirmed bachelor,
   is counting down the years to his retirement from the Sioux Falls Police Department.

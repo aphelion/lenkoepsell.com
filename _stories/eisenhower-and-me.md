@@ -2,8 +2,6 @@
 title: Eisenhower and Me
 body_class: item
 layout: item
-description: >
-  Description goes here.
 plot_summary: >
   On a sunny afternoon in Santa Barbara, Roscoe Emerson,
   an up and coming Certified Financial Planner,
